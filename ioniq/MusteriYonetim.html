@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kullanıcı Yönetim Sayfası</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Your description">
+    <meta name="author" content="Your name">
+    <meta property="og:site_name" content=""/>
+    <meta property="og:site" content=""/>
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap"
+          rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <link rel="icon" href="images/icons8-listen-50.png">
+
+    <!--TableScript-->
+    <style>
+        #sayfa{
+            width: 500px;
+            margin:auto;
+            background: #ffeaa7;
+            padding:20px;
+        }
+        label{
+            display:block;
+            margin-top:5px;
+        }
+        input{
+            width: 200px;
+            height: 25px;
+            font-size:1.2em;
+        }
+        button{
+            border:none;
+            display:block;
+            margin-top:5px;
+            width: 204px;
+            height: 50px;
+            text-align: center;
+            font-size:1.2em;
+        }
+        table{
+            background: #0984e3;
+            margin:5px;
+            width: 100%;
+            color:#fff;
+        }
+        td,th{
+            border:1px solid white;
+            border-spacing: 0px;
+            margin: 0px;
+        }
+    </style>
+
+</head>
+<body>
+<nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
+    <div class="container">
+        <a class="navbar-brand logo-image" href="index.html"><img src="images/eec1ea1e9391ad42169e4e30e0ab78cd.png"
+                                                                  alt="alternative"></a>
+
+        <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="MusteriYonetim.html">Anasayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="MusteriYonetim.html">Profil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sikayettbl">Şikayetlerim </a>
+                </li>
+
+            </ul>
+            <span class="nav-item">
+                        <a class="btn-outline-sm" href="index.html">Sign Out</a>
+            </span>
+        </div>
+    </div>
+</nav>
+
+<header id="header" class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="text-container">
+                    <h1 class="h1-large">Yorumlarınız<span class="replace-me">bizim için değerli.</span></h1>
+                    <p class="p-large">Kulak ardı edilen şikayetlerinizi yayınlayarak tüm kullanıcıların erişimine açın.
+                        Şirketlere sesinizi duyurmak önceliğimizdir. </p>
+
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="image-container">
+                    <img class="img-fluid" src="images/article-details-small.jpg" alt="alternative">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div id="sikayettbl" class="container" style="margin-top: 150px; margin-bottom:150px">
+    <h2>Şikayetleriniz</h2>
+    <p>Bu alanda şikayet geçmişinizi görüntüleyebilir. Yeni şikayet ekleme, Silme ve Güncelleme işlemlerini başarılı bir şekilde gerçekleştirebilirsiniz.</p>
+    <table class="table table-hover" id="liste">
+        <thead>
+        <tr>
+            <th>Kurum Adı</th>
+            <th>Kurum mail</th>
+            <th>Kurum Adresi</th>
+            <th>Şikayet Tarihi</th>
+            <th>Şikayet Birimi</th>
+            <th>Şikayet Açıklama</th>
+            <th>Şikayet Durumu</th>
+            <th><a class="btn-solid-reg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Sil</a></th>
+            <th><a class="btn-solid-reg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Güncelle</a></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Aeternitas</td>
+            <td>aeternitas@example.com</td>
+            <td>Pamukkale/Denizli</td>
+            <td>15.04.2022 12:26:30</td>
+            <td>Ürün Teslimatı</td>
+            <td>Sipariş verilen ürünün stokta görünmemesi sonucunda zamanında siparişin teslim edilememesi.</td>
+            <td>Active</td>
+            <td><a class="btn-solid-reg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Sil</a></td>
+            <td><a class="btn-solid-reg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Güncelle</a></td>
+        </tr>
+        <tr>
+            <td>Swen</td>
+            <td>swen@example.com</td>
+            <td>Kırıkkale</td>
+            <td>30.06.2022 21:15:16</td>
+            <td>Ürün Hakkında</td>
+            <td>Ürün tanıtımda vaad edile özellikleri taşımamaktadır.</td>
+            <td>Passive</td>
+            <td><a class="btn-solid-reg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Sil</a></td>
+            <td><a class="btn-solid-reg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Güncelle</a></td>
+        </tr>
+        <tr>
+            <td>Seçil Akın Butik</td>
+            <td>secilakini@example.com</td>
+            <td>22.12.2022 12:08:54</td>
+            <td>Kadiköy/İstanbul</td>
+            <td>Müşteri Hizmetleri</td>
+            <td>Ürün teslimatı ile ilgili Müşteri Hizmetlerine ulaşılamaması.</td>
+            <td>Active</td>
+            <td><a id="silBtn" class="btn-solid-reg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Sil</a></td>
+            <td><a class="btn-solid-reg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Güncelle</a></td>
+        </tr>
+        </tbody>
+    </table>
+    <a class="btn-solid-reg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Yeni Şikayet Oluştur</a>
+</div>
+
+<!-- Details Modal -->
+<div id="staticBackdrop" class="modal fade" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div id="sayfa">
+                <label>Kurum İsmi</label>    <input type="text"  id="kisim">
+                <label>Şikayet Tarihi</label>    <input type="datetime-local"  id="sDate">
+                <label>Kurum Mail</label> <input type="text"  id="kmail">
+                <label>Kurum Adres </label>   <input type="text"  id="kadres">
+                <label>Şikayet Başlık </label>   <input type="text"  id="sikayetTur">
+                <label>Şikayet Açıklama </label>   <input type="text"  id="sikayetAciklama">
+                <button id="Ekle">Tabloya Ekle</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const kisim=document.querySelector("#kisim");
+    const sDate=document.querySelector("#sDate");
+    const kmail=document.querySelector("#kmail");
+    const kadres=document.querySelector("#kadres");//tıklama olayı eklenecek
+    const sikayetTur=document.querySelector("#sikayetTur");
+    const sikayetAciklama=document.querySelector("#sikayetAciklama");
+
+    Ekle.onclick=function(){
+        //butona tıklanınca çalıştırılacak
+
+        //td elementlerini oluşturuyoruz
+        let tkisim=document.createElement("td");
+        let tsDate=document.createElement("td");
+        let tkmail=document.createElement("td");
+        let tkadres=document.createElement("td");
+        let tsikayetTur=document.createElement("td");
+        let tsikayetAciklama=document.createElement("td");
+        let tSil = document.createElement("td");
+        let silBtn =document.createElement("button");
+        silBtn.textContent="Sil";
+        tSil.appendChild(silBtn); //butonu td içine ekliyoruz.
+
+        silBtn.onclick=function(e){
+
+            liste.removeChild(this.parentNode.parentNode);
+        }
+
+        tkisim.textContent=kisim.value;//textboxtan değeri okuyup aktarıyoruz.
+        tsDate.textContent=sDate.value;//textboxtan değeri okuyup aktarıyoruz.
+        tkmail.textContent=kmail.value;//textboxtan değeri okuyup aktarıyoruz.
+        tkadres.textContent=kadres.value;//textboxtan değeri okuyup aktarıyoruz.
+        tsikayetTur.textContent=sikayetTur.value;//textboxtan değeri okuyup aktarıyoruz.
+        tsikayetAciklama.textContent=sikayetAciklama.value;//textboxtan değeri okuyup aktarıyoruz.
+
+        //tr elementi oluşturuyoruz
+        let tr=document.createElement("tr");
+
+        //tdleri tr içine ekliyoruz
+        tr.appendChild(tkisim);
+        tr.appendChild(tsDate);
+        tr.appendChild(tkmail);
+        tr.appendChild(tkadres);
+        tr.appendChild(tsikayetTur);
+        tr.appendChild(tsikayetAciklama);
+        tr.appendChild(tSil);
+
+        //tr elementini liste (tablo) içine ekliyoruz
+        liste.appendChild(tr);
+
+        //nenelerin için eklemeden sonra temizleyelim
+        kisim.value="";
+        sDate.value="";
+        kmail.value="";
+        kadres.value="";
+        sikayetTur.value="";
+        sikayetAciklama.value="";
+
+        //temizlemeden sonra ad içine odaklansın
+        kisim.focus();
+    }
+
+</script>
+
+
+
+<!-- Invitation -->
+<div class="basic-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h4>Marka Değerlendirmeleriniz bizim için değerli, kulak arkası etmeyin! Anlatın, BİZ VARIZ</h4>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Copyright -->
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <p class="p-small">Copyright © <a href="#your-link">Ayşe Nur Durmaz - Seren Akdemir</a></p>
+            </div>
+            <div class="col-lg-6">
+                <p class="p-small">Bakırçay Üniversitesi Web Programlama Dersi Dönem Projesi 210601693 -
+                    210601687</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button onclick="topFunction()" id="myBtn">
+    <img src="images/up-arrow.png" alt="alternative">
+</button>
+
+
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/purecounter.min.js"></script>
+<script src="js/replaceme.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
+
+

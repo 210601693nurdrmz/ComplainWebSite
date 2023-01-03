@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Your description">
+    <meta name="author" content="Your name">
+    <meta property="og:site_name" content=""/>
+    <meta property="og:site" content=""/>
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Complain Web Site</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap"
+          rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <link rel="icon" href="images/icons8-listen-50.png">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
+    <div class="container">
+        <a class="navbar-brand logo-image" href="index.html"><img src="images/eec1ea1e9391ad42169e4e30e0ab78cd.png"
+                                                                  alt="alternative"></a>
+
+        <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#header">Anasayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Şikayetler</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#details">Hakkımızda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pricing">Sponsorlar</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown"
+                       aria-expanded="false">Sign In</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                        <li><a class="dropdown-item" href="log-in.html">Kullanıcı Girişi</a></li>
+                        <li>
+                            <div class="dropdown-divider"></div>
+                        </li>
+                        <li><a class="dropdown-item" href="firmalogin.html">Kurumsal Giriş</a></li>
+                        <li>
+                            <div class="dropdown-divider"></div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <span class="nav-item">
+                        <a class="btn-outline-sm" href="sign-up.html">Sign Up</a>
+            </span>
+        </div>
+    </div>
+</nav>
+
+<style type="text/css">
+    body {
+        background: #618c8c;
+        font-size: 10px;
+        font-family: Trebuchet MS;
+    }
+
+    #kayitFormu {
+
+        border-radius: 10px;
+        background: #ecebeb;
+        width: 360px;
+        margin: auto;
+        margin-top: 150px;
+        padding: 30px;
+        text-align: center;
+    }
+
+    input, button {
+        border-radius: 5px;
+        border: none;
+        width: 300px;
+        height: 50px;
+        margin: 20px 0px 20px 0px;
+        background: rgba(240, 240, 240, .5);
+        padding-left: 15px;
+        font-style: italic;
+
+    }
+
+    .btn {
+        background: #e84c0f;
+        color: white;
+    }
+
+    h3 {
+        color: #333;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+
+</style>
+
+<div id="kayitFormu">
+    <form action="kayityap.php" method="get">
+        <h3>Kurumsal Giriş Formu</h3>
+
+        <input type="email" name="eposta" placeholder="Şirket Mail Adresinizi Giriniz" required/>
+
+        <input type="password" name="parola" placeholder="şifrenizi giriniz" required pattern="[0-9a-zA-Z]{5}"/>
+
+        <input class="btn" type="submit" href="sikayetyonetimi.html" value="Giriş Yap"/>
+    </form>
+
+</div>
+
+
+<button onclick="topFunction()" id="myBtn">
+    <img src="images/up-arrow.png" alt="alternative">
+</button>
+
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/purecounter.min.js"></script>
+<script src="js/replaceme.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

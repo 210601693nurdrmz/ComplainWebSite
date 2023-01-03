@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Şikayet Yönetimi</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Your description">
+    <meta name="author" content="Your name">
+    <meta property="og:site_name" content=""/>
+    <meta property="og:site" content=""/>
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap"
+          rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <link rel="icon" href="images/icons8-listen-50.png">
+</head>
+<body>
+<nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
+    <div class="container">
+        <a class="navbar-brand logo-image" href="index.html"><img src="images/24f7155de9816fab8726ddd4e9f1a450.png"
+                                                                  alt="alternative"></a>
+
+        <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="sikayetyonetimi.html">Anasayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#header">Hakkımızda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sikayettbl">Şikayet Yönetimi </a>
+                </li>
+
+            </ul>
+            <span class="nav-item">
+                        <a class="btn-outline-sm" href="index.html">Sign Out</a>
+            </span>
+        </div>
+    </div>
+</nav>
+
+<header id="header" class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="text-container">
+                    <h1 class="h1-large">Kurumsal Kimliğiniz <span class="replace-me">bizim için değerli.</span></h1>
+                    <p class="p-large">Markanızı geliştirmek için bir fırsat sunan kullanıcı deneyimlerine hızlı ve
+                        etkili çözümler üretebilir ve marka imajınız üzerinde pozitif etki bırakabilirsiniz. </p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="image-container">
+                    <img class="img-fluid" src="images/header-illustration.svg" alt="alternative">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div id="sikayettbl" class="container" style="margin-top: 150px; margin-bottom:150px">
+    <h2>Kurumsal Şikayetlerin Yönetimi</h2>
+    <p>Şirketiniz adına yapılan şikayetleri bu bölümde görüntülüyebilir ve çözümler sunabilirsiniz. Çözümleriniz
+        kullanıcıların değerlendirmesine gönderilecektir.</p>
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>İsim</th>
+            <th>Soyisim</th>
+            <th>Email</th>
+            <th>Adres</th>
+            <th>Şikayet Birimi</th>
+            <th>Şikayet Açıklama</th>
+            <th>Şikayet Durumu</th>
+            <th>Şikayet Açıklaması</th>
+            <th></th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Akın</td>
+            <td>Demirci</td>
+            <td>akindemirci@example.com</td>
+            <td>Pamukkale/Denizli</td>
+            <td>Ürün Teslimatı</td>
+            <td>Sipariş verilen ürünün stokta görünmemesi sonucunda zamanında siparişin teslim edilememesi.</td>
+            <td>Active</td>
+            <td></td>
+            <td><a class="btn-solid-reg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Açıklama</a></td>
+        </tr>
+        <tr>
+            <td>Merve</td>
+            <td>Yılmaz</td>
+            <td>merveyilmaz@example.com</td>
+            <td>Kırıkkale</td>
+            <td>Ürün Hakkında</td>
+            <td>Ürün tanıtımda vaad edile özellikleri taşımamaktadır.</td>
+            <td>Passive</td>
+            <td></td>
+            <td><a class="btn-solid-reg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Açıklama</a></td>
+        </tr>
+        <tr>
+            <td>Deniz</td>
+            <td>Akıncı</td>
+            <td>denizakinci@example.com</td>
+            <td>Kadiköy/İstanbul</td>
+            <td>Müşteri Hizmetleri</td>
+            <td>Ürün teslimatı ile ilgili Müşteri Hizmetlerine ulaşılamaması.</td>
+            <td>Active</td>
+            <td></td>
+            <td><a class="btn-solid-reg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Açıklama</a></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Details Modal -->
+<div id="staticBackdrop" class="modal fade" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="row">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="col-lg-8">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/details-modal.jpg" alt="alternative">
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-lg-4" style="margin-top: 30px">
+                    <h3>Şikayete Çözümünüz</h3>
+                    <input type="textbox" placeholder="Açıklamanızı Giriniz..."
+                           style=" margin-top:25px; align-items: center; width: 250px; height: 200px" id="kaciklama">
+                    <div style="margin-top: 20px">
+                        <button type="button" class="btn-outline-reg" data-bs-dismiss="modal" onclick="Ekle">Kaydet</button>
+                        <button type="button" class="btn-outline-reg" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Invitation -->
+<div class="basic-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h4>Marka Değerlendirmeleriniz bizim için değerli, kulak arkası etmeyin! Anlatın, BİZ VARIZ</h4>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Copyright -->
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <p class="p-small">Copyright © <a href="#your-link">Ayşe Nur Durmaz - Seren Akdemir</a></p>
+            </div>
+            <div class="col-lg-6">
+                <p class="p-small">Bakırçay Üniversitesi Web Programlama Dersi Dönem Projesi 210601693 -
+                    210601687</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button onclick="topFunction()" id="myBtn">
+    <img src="images/up-arrow.png" alt="alternative">
+</button>
+
+<script>
+
+
+    const kaciklama=document.querySelector("#kaciklama");
+
+    Ekle.onclick=function(){
+        //butona tıklanınca çalıştırılacak
+
+        //td elementlerini oluşturuyoruz
+        let kaciklama=document.createElement("td");
+
+        kaciklama.textContent=kaciklama.value;
+
+        //tr elementi oluşturuyoruz
+        let tr=document.createElement("tr");
+
+        //tdleri tr içine ekliyoruz
+        tr.appendChild(kaciklama);
+
+
+        //tr elementini liste (tablo) içine ekliyoruz
+        liste.appendChild(tr);
+
+        //nenelerin için eklemeden sonra temizleyelim
+        kaciklama.value="";
+
+
+        //temizlemeden sonra ad içine odaklansın
+        kaciklama.focus();
+    }
+
+</script>
+
+
+
+
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/purecounter.min.js"></script>
+<script src="js/replaceme.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
+
+
